@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+:root{
+    --blue:#3ca1ba;
+    --orange:#d1884f;
+    --lightblue:#67cae3;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    margin:0;
+
+}
+
+#navbar{
+    display:flex;
+    flex-direction: row-reverse;
+}
+#list{
+    display: flex;
+    gap: 35px;
+    list-style-type: none;
+    margin-right: 10%;
+}
+#navbar #list li {
+    width:100%
+}
+#navbar #list li a{
+    text-decoration: none;
+    color:black;
+    display:flex;
+    gap:15%;
+    text-wrap: nowrap;
+
+}
+#navbar #list li a:hover{
+    color:var(--orange);
+}
+#navbar #list li a:focus{
+    color:var(--orange);
+}
+#navbar #list li a:hover .fillable,#navbar #list li a:focus .fillable{
+    fill:orange !important;
+}
+main{
+    display: flex;
+    margin:10%;
+    gap:5%;
+}
+main section h4{
+    color:var(--lightblue);
+}
+main section h1{
+    color:var(--blue);
+}
+main section h1 span{
+    color:var(--orange);
+}
+#bttn{
+    cursor:pointer;
+    color:var(--blue);
+}
+main figure{
+    margin:0;
+}
+main figure img{
+        border-radius: 0px 0px 0px 50%;
+        box-shadow: -40px 15px 0px -15px #bfaa89;
+}
+main section footer{
+    margin-top:10%;
+    display:flex;
+    gap:1%;
+}
+main section footer button{
+    border:1px solid var(--blue);
+    padding: 5px 20px 5px 20px;
+    background:none;
+    color:var(--blue);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size:1em
+}
+main section footer button:hover, button:active,button:focus{
+    background-color: var(--blue);
+    color:white;
+    box-shadow: grey 0px 10px 20px, grey 0px 6px 6px;
+}
+#persimage{
+    width:500px;
+    height:600px;
+}
+@media only screen and (max-width: 1450px) {
+    #persimage{
+        width:400px;
+        height:500px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    #persimage{
+        width:300px;
+        height:400px;
+    }
+}
